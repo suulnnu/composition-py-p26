@@ -1,0 +1,14 @@
+class component:
+    def __init__(self):
+        print('component class object created...')
+    def m1(self):
+        print('component class m1()method executed...')
+class component:
+    def __init__(self):
+        self.obj1=components()
+        print('composite class object also created...')
+    def m2(self):
+        print('composite class m2()method executed...')
+        self.obj1m1()
+        obj2=composite()
+        obj2.m2()
